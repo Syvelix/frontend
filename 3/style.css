@@ -1,0 +1,194 @@
+/* Импорты */
+@font-face {
+    font-family:"Undertale";
+    src: url(../media/fonts/Undertale-Battle-Font.ttf);
+}
+/* //// */
+
+/* Склад переменных */
+:root
+{
+    --prime_color:rgb(15, 15, 15);
+    --prime_font:"Liberation Mono";
+    --prime_size:16;
+    
+    --fun_color:rgb(126, 0, 48);
+
+    --header_bg_color:rgb(244, 159, 255);
+    --nav_bg_color:rgba(126, 252, 214, 0.74);
+    --main_bg_color:rgba(128, 31, 255, 0.322);
+}
+/* //// */
+
+/* Основные теги */
+*
+{
+    color:var(--prime_color);
+    font-family:var(--prime_font);
+    text-align: justify;
+}
+
+header
+{
+    background-color: var(--header_bg_color);
+}
+
+ul
+{
+    list-style:square;
+}
+
+nav
+{
+    text-align: center;
+    background-color: var(--nav_bg_color);
+}
+
+body
+{
+    font-size: 16px;
+    background-color: var(--main_bg_color);
+}
+
+footer
+{
+    text-align: center;
+}
+
+/* //// */
+
+/* Ссылки и то что с ними связано */
+a
+{
+    color: #00a5ce;
+}
+
+a:hover
+{
+    color: #ce00c4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#external
+{
+    color: blue;
+}
+
+#external:hover
+{
+    color: rgb(162, 0, 255);
+    font-style: normal;
+}
+
+#external:active
+{
+    color: #007d9c;
+    font-style: normal;
+}
+
+#external:visited
+{
+    color: #002933;
+    font-style: normal;
+}
+/* //// */
+
+/* Заголовки */
+h1
+{
+    color: darkblue;
+    text-align: center;
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h2
+{
+    text-align: center;
+    color:rgb(0, 72, 139);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h3
+{
+    color:rgb(0, 139, 74);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h4
+{
+    color:rgb(28, 139, 0);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h5
+{
+    color:rgb(130, 139, 0);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h6
+{
+    color:rgb(139, 79, 0);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+/* //// */
+
+/* Цитаты и то что с ними связано*/
+blockquote
+{
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:#ededed;
+    text-align: center;
+}
+
+blockquote cite
+{
+    display: block;
+    text-align: right;
+}
+/* //// */
+
+/* Классы */
+.fun
+{
+    display: block;
+    text-align:center;
+    color:var(--fun_color);
+    font-size:20px;
+}
+
+.center
+{
+    display: block;
+    margin: auto;
+}
+/* //// */
+
+/* IDs */
+#bold
+{
+    font-weight: bold;
+        
+    text-align: inherit;
+    font-size:inherit;
+    color:inherit;
+}
+
+#diabolic
+{
+    color:red;
+    letter-spacing: 1.2rem;
+    background-color: rgb(8, 0, 0);
+}
+/* //// */
+
+
