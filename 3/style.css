@@ -14,9 +14,12 @@
     
     --fun_color:rgb(126, 0, 48);
 
-    --header_bg_color:rgb(244, 159, 255);
+    --header_bg_color:rgb(121, 224, 255);
     --nav_bg_color:rgba(126, 252, 214, 0.74);
-    --main_bg_color:rgba(128, 31, 255, 0.322);
+    --body_bg_color:rgba(128, 31, 255, 0.322);
+    --footer_bg_color:rgb(8, 0, 15);
+    --main_bg_color:rgb(130, 180, 255);
+    --section_bg_color:rgb(129, 255, 171);
 }
 /* //// */
 
@@ -30,6 +33,8 @@
 
 header
 {
+    display: block;
+    border-radius: 1.1rem;
     background-color: var(--header_bg_color);
 }
 
@@ -40,6 +45,8 @@ ul
 
 nav
 {
+    display: block;
+    border-radius: 0.5rem;
     text-align: center;
     background-color: var(--nav_bg_color);
 }
@@ -47,11 +54,46 @@ nav
 body
 {
     font-size: 16px;
+    background-color: var(--body_bg_color);
+}
+
+main
+{
+    display: block;
+    border-radius: 1.1rem;
     background-color: var(--main_bg_color);
+}
+
+section
+{
+    display: block;
+    border-radius: 1.1rem;
+    padding: 0.5%;
+    background-color: var(--section_bg_color);
+}
+
+article
+{
+    display: block;
+    padding: 0.5%;
+    border-radius: 1.1rem;
+    background-color: #92f2ff;
+}
+
+aside.fun
+{
+    display: block;
+    padding: 1%;
+    border-radius: 1.1rem;
+    background-color: #f58989;
 }
 
 footer
 {
+    display: block;
+    border-radius: 1.1rem;
+    padding: 2%;
+    background-color: var(--footer_bg_color);
     text-align: center;
 }
 
@@ -170,6 +212,12 @@ blockquote cite
 {
     display: block;
     margin: auto;
+}
+
+.center_text
+{
+    display: block;
+    text-align: center;
 }
 /* //// */
 
