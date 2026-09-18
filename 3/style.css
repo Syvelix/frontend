@@ -112,24 +112,24 @@ a:hover
     text-decoration: none;
 }
 
-#external
+.external
 {
     color: blue;
 }
 
-#external:hover
+.external:hover
 {
     color: rgb(162, 0, 255);
     font-style: normal;
 }
 
-#external:active
+.external:active
 {
     color: #007d9c;
     font-style: normal;
 }
 
-#external:visited
+.external:visited
 {
     color: #002933;
     font-style: normal;
@@ -208,6 +208,15 @@ blockquote cite
     font-size:20px;
 }
 
+.bold
+{
+    font-weight: bold;
+        
+    text-align: inherit;
+    font-size:inherit;
+    color:inherit;
+}
+
 .center
 {
     display: block;
@@ -222,14 +231,6 @@ blockquote cite
 /* //// */
 
 /* IDs */
-#bold
-{
-    font-weight: bold;
-        
-    text-align: inherit;
-    font-size:inherit;
-    color:inherit;
-}
 
 #diabolic
 {
