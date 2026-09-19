@@ -1,0 +1,93 @@
+<!--Обо мне-->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Обо мне</title>
+    </head>
+    <body>
+        <!--Заголовок-->
+        <header>
+            <div class="stylebox">
+                <h1>Обо мне</h1>
+                <img src="../media/images/Enco.webp", alt="Logo", title="Логотип Enco">
+            </div>
+        </header>
+
+        <!--Кнопка наверх-->
+        <aside class="up">
+            <a href="#top">⬆️</a>
+        </aside>
+
+        <!--Меню навигации-->
+        <nav>
+            <a href="main.html">Главная</a>  |  <a href="friends.html">Друзья</a>  |  <a href="hobbies.html">Увлечения</a>  |  <a href="group.html">Группа</a>
+        </nav>
+
+        <main>
+            <!--Список разделов-->
+            <section class="sidebar">
+                <h2 class="left_text">Разделы</h2>
+                <ol>
+                    <li><a href="#life">Биография</a></li>
+                    <li><a href="#abilities">Навыки</a></li>  
+                </ol>
+            </section>
+            
+            <!--Секция с непосредственным содержанием-->
+            <section class="m_blocks">
+                <!--Биография-->
+                <article class="unibox", id="about">
+                    <h2 id="life">Биография</h2>
+                    <img src="../media/images/chujin.webp", alt="Аватар автора страницы", title="Мой аватар, Чуджин", width="150", height="119", class="center">
+                    <br>
+                    Родился в Ставрополе, переехал в Ессентуки, где учился в школе №10. Окончил с золотой медалью, сдал ЕГЭ на 265 баллов. Поступил учиться в СКФУ на направление "Программная инженерия".
+                </article>
+            
+                <!--Навыки-->
+                <article class="unibox", id="abilities">
+                    <h2>Навыки</h2>
+                    <ol>
+                        <li>
+                            <id="programming">Пишу код на следующих языках</id>
+                            <ul>
+                                <li>Python (прекрасно)</li>
+                                <li>C# (неплохо)</li>
+                                <li>C++ (неплохо)</li>
+                                <li>GML (неплохо)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Собираю компьютеры
+                        </li>
+                        <li>
+                            Умею собирать всякие электрические штуки
+                        </li>
+                        <li>
+                            Есть опыт в пайке
+                        </li>
+                        <li>
+                            Учу следующие языки:
+                            <ul>
+                                <li>Английский (прекрасно)</li>
+                                <li>Японский (начинающий, знаю кану, некоторые кандзи и базовую грамматику)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </article>
+            
+                <!--Интересный факт-->
+                <aside class="fun">
+                    <strong class="bold">Интересный факт: </strong> тревога - моё проклятие, но и мой двигатель. Я бы не стал делать этот сайт на высший балл, не дави она на меня.
+                </aside>
+            </section> 
+        </main>
+        
+        <!--Подвал сайта-->
+        <footer>
+            <em class="unibox", id="abtfooter_box"><a href="https://github.com/Syvelix" target="_blank", class="external">Мой GitHub</a></em>
+        </footer>
+    </body>
+</html>

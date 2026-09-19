@@ -1,0 +1,577 @@
+/* Импорты */
+@font-face {
+    font-family:"Undertale";
+    src: url(../media/fonts/Undertale-Battle-Font.ttf);
+}
+/* //// */
+
+/* Склад переменных */
+:root
+{
+    --prime_color:rgb(15, 15, 15);
+    --prime_font:"Liberation Mono";
+    --prime_size:16;
+    
+    --fun_color:rgb(126, 0, 48);
+
+    --header_bg_color:rgb(243, 239, 227);
+    --nav_bg_color:rgba(126, 252, 214, 0.74);
+    --body_bg_color:rgba(128, 31, 255, 0.322);
+    --footer_bg_color:rgb(2, 2, 1);
+    --main_bg_color:rgb(130, 180, 255);
+    --section_bg_color:rgb(129, 255, 171);
+}
+/* //// */
+
+/* Основные теги */
+*
+{
+    color:var(--prime_color);
+    font-family:var(--prime_font);
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+
+}
+
+header img
+{
+    grid-row: 2;
+    grid-column: 2;
+    margin-left: 26%;
+
+    border-style: solid;
+    border-color: azure;
+    border-radius: 0.5rem;
+}
+
+ul
+{
+    list-style:square;
+}
+
+nav
+{
+    display: flex;
+    flex-basis: auto;
+
+    position: sticky;
+    top: 0;
+
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+    padding: 0.5em;
+
+    border-style: solid;
+    border-color: black;
+
+    justify-content: space-evenly;
+    background-color: var(--nav_bg_color);
+
+    font-size: 1.5rem;
+}
+
+nav a
+{
+    letter-spacing: 1rem;
+}
+
+
+body
+{
+
+    font-size: 16px;
+    background-color: var(--body_bg_color);
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2, 1fr;
+
+    border-style: solid;
+    border-bottom: #ededed;
+    border-radius: 1.1rem;
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+    background-color: var(--main_bg_color);
+}
+
+section
+{
+    border-radius: 1.1rem;
+    padding: 0.1%;
+    background-color: var(--section_bg_color);
+}
+
+section.intro
+{
+    grid-row: 1;
+    grid-column: 1/-1;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-inline-end: 1rem;
+    margin-inline-start: 1rem;
+
+    font-size: large;
+
+    padding: 1em;
+}
+
+section.m_blocks
+{
+    display: grid;
+    margin: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    
+
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+aside.fun
+{
+    border-radius: 1.1rem;
+    background-color: #f58989;
+
+    margin: 1.1em;
+    padding: 1rem;
+
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
+footer
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    border-color: #002933;
+    border-style: solid;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+
+    padding: 2%;
+    background-color: var(--footer_bg_color);
+
+    text-align: center;
+}
+
+/* //// */
+
+/* Ссылки и то что с ними связано */
+a
+{
+    color: #00a5ce;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #ce00c4;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.external
+{
+    color: blue;
+}
+
+.external:hover
+{
+    color: rgb(162, 0, 255);
+    font-style: normal;
+}
+
+
+.external:active
+{
+    color: #007d9c;
+    font-style: normal;
+}
+
+.external:visited
+{
+    color: #002933;
+    font-style: normal;
+}
+/* //// */
+
+/* Заголовки */
+h1
+{
+    color: darkblue;
+    text-align: center;
+    font-family:"Undertale";
+    font-weight: 500;
+
+    grid-column: 2;
+}
+
+h2
+{
+    text-align: center;
+    color:rgb(0, 72, 139);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h3
+{
+    color:rgb(0, 139, 74);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h4
+{
+    color:rgb(28, 139, 0);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h5
+{
+    color:rgb(130, 139, 0);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+
+h6
+{
+    color:rgb(139, 79, 0);
+    font-family:"Undertale";
+    font-weight: 500;
+}
+/* //// */
+
+/* Цитаты и то что с ними связано*/
+blockquote
+{
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:#ededed;
+    text-align: center;
+}
+
+blockquote cite
+{
+    display: block;
+    text-align: right;
+}
+/* //// */
+
+/* Классы */
+.fun
+{
+    text-align:center;
+    color:var(--fun_color);
+    font-size:20px;
+
+    border-style: solid;
+    border-color: rgb(151, 39, 255);
+}
+
+.bold
+{
+    font-weight: bold;
+        
+    text-align: inherit;
+    font-size:inherit;
+    color:inherit;
+}
+
+.center
+{
+    display: block;
+    margin: auto;
+}
+
+.center_text
+{
+    display: block;
+    text-align: center;
+}
+
+.left_text
+{
+    display: block;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.stylebox
+{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    background-color: rgb(255, 104, 235);
+
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: #002933;
+
+    grid-column: 2;
+}
+
+.sidebar
+{
+    position: fixed;
+    bottom: 0.5rem;
+    right: 1rem;
+
+    border-style: solid;
+    border-color: #001324;
+}
+
+.up
+{
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.7rem;
+
+    border-style: solid;
+    border-color: rgb(206, 0, 0);
+
+    background-color: blue;
+
+    font-size: xx-large;
+}
+
+.unibox
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+
+    background-color: magenta;
+    font-size: larger;
+
+    border-style: solid;
+    border-color: #002933;
+    border-radius: 1.1rem;
+    margin: 0.5rem;
+}
+
+.unibox#info
+{
+    padding: 1rem;
+    
+    background-color: #92f2ff;
+    text-align: justify;
+
+    grid-column: 1;
+}
+
+.unibox#news
+{
+    padding: 1rem;
+    
+    background-color: #5c9ef5;
+    text-align: justify;
+
+    grid-column: 2;
+}
+
+.unibox#PC_stats
+{
+    padding: 1rem;
+    
+    font-size: 20px;
+    background-color: #001324;
+    text-align: justify;
+
+    border-color: rgb(0, 81, 255);
+
+    grid-column: 3;
+
+    list-style: none;
+}
+
+.unibox#PC_stats h2
+{
+    color: #15ff00;
+}
+
+.unibox#PC_stats ul
+{
+    list-style: lower-greek;
+}
+
+.unibox#PC_stats ul li
+{
+    color:#92f2ff;
+}
+
+.unibox#mfooter_box
+{
+    grid-column: 2;
+    
+    background-color: #ffffff;
+
+    border-style: solid;
+    border-color: red;
+    
+    padding: 1rem;
+
+    text-align: left;
+}
+
+.unibox#mfooter_box a
+{
+    font-size: large;
+    text-align: center;
+}
+
+.unibox#abtfooter_box
+{
+    grid-column: 2;
+    
+    background-color: #ffffff;
+
+    border-style: solid;
+    border-color: red;
+    
+    padding: 1rem;
+
+    text-align: left;
+}
+
+.unibox#abtfooter_box a
+{
+    font-size: large;
+    text-align: center;
+}
+
+.unibox#about
+{
+    padding: 1rem;
+    
+    background-color: #5c9ef5;
+    text-align: justify;
+
+    grid-column: 1;
+}
+
+.unibox#about img
+{
+    border-style: solid;
+    border-color: #001324;
+    border-radius: 1rem;
+}
+
+.unibox#abilities
+{
+    padding: 1rem;
+    
+    background-color: #90c0c4;
+    text-align: justify;
+
+    grid-column: 2/-1;
+}
+
+.unibox#friends
+{
+    padding: 0.5rem;
+    
+    background-color: #5ff2ff;
+    text-align: justify;
+
+    grid-column: 1/-1;
+}
+
+.unibox#friends ul
+{
+    list-style: none;
+}
+
+.unibox#friends ul li
+{
+    grid-column: 2;
+    text-align: center;
+}
+
+.unibox#friends img
+{
+    grid-column: 1;
+    margin-top: 0.1rem;
+
+    border-style: solid;
+    border-color: #001324;
+    border-radius: 1rem;
+}
+
+.unibox#group
+{
+    padding: 0.5rem;
+    
+    background-color: rgb(160, 158, 158);
+    text-align: justify;
+
+    grid-column: 1/-1;
+}
+
+.unibox#hobbies
+{
+    padding: 0.5rem;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    
+    background-color: rgb(160, 158, 158);
+    text-align: justify;
+
+    grid-column: 1/-1;
+}
+
+.unibox#games
+{
+    padding: 0.5rem;
+
+    background-color: rgb(15, 0, 49);
+    text-align: justify;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    
+    padding-left: 4rem;
+    margin-left: -2rem;
+}
+
+.unibox#games *
+{
+    color:#92f2ff;
+}
+
+
+/* //// */
+
+/* IDs */
+
+#diabolic
+{
+    color:red;
+    letter-spacing: 1.2rem;
+    text-decoration: none;
+    background-color: rgb(8, 0, 0);
+}
+/* //// */
+
+
