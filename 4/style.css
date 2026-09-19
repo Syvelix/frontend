@@ -567,7 +567,7 @@ blockquote cite
     grid-column: 1/-1;
 }
 
-.unibox#hobbies
+.unibox#hobbies /* Особая коробка для других коробок. В будущем возможно вынесу в отдельный класс */
 {
     display: grid;
     padding: 0.5rem;
