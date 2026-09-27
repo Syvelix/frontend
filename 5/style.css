@@ -710,6 +710,57 @@ blockquote cite
     grid-row: minmax(2, 2/3);
 }
 
+.unibox#not_found
+{
+    grid-column: 1/-1;
+
+    padding: 0.5rem;
+
+    justify-content: center;
+    
+    
+}
+
+.unibox#not_found *
+{
+    grid-column: 1/-1;
+    color:rgb(217, 255, 0)
+}
+
+.unibox#not_found .center_text
+{
+    background-color: #001324;
+    font-size: xx-large;
+}
+
+.lol
+{
+    background-image:url(../media/images/Муся.webp);
+}
+
+#h1_not_found
+{
+    color: chartreuse;
+}
+
+.transparent
+{
+    background-color: transparent;
+    border-style: none;
+}
+
+.transparent_all *
+{
+    background-color: transparent;
+    border-style: none;
+}
+
+.transparent_all
+{
+    background-color: transparent;
+    border-style: none;
+}
+
 /* //// */
 
 /* //// */
