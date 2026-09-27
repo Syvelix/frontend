@@ -71,8 +71,8 @@ nav
     position: sticky;
     top: 3rem;
 
-    margin-left: -0.5%;
-    margin-right: -0.5%;
+    margin-left: -0.3%;
+    margin-right: -0.3%;
     padding: 0.5em;
 
     border-style: solid;
@@ -726,8 +726,8 @@ blockquote cite
 /* //// */
 
 
-/* Настройки для экранов с шириной <= 768px */
-@media screen and (max-width: 768px)
+/* Настройки для экранов с шириной <= 1024px */
+@media screen and (max-width: 1024px)
 {
     .unibox 
     {
@@ -768,6 +768,7 @@ blockquote cite
         grid-column: 1/-1;
         grid-row: auto;
     }
+    
     nav
     {
         display: grid;
@@ -777,10 +778,10 @@ blockquote cite
         width: 220px;
 
         position: sticky;
-        top: 0;
 
         margin-left: -0.5%;
         margin-right: -0.5%;
+        top: 3rem;
         padding: 0.5em;
 
         border-style: solid;
@@ -799,7 +800,7 @@ blockquote cite
 
     .nav_button
     {
-        left: 45%;
+        left: 4%;
     }
 
     .pc
