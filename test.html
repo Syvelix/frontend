@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Страница для тестирования</title>
+    </head>
+
+    <body>
+        <section id="inputtest">
+        <input type="color"></input>
+        <br>
+        <form>
+            <label for="name">Привязано к textarea</label>
+            <textarea required id="name" name="name" rows="10" cols="70" placeholder="Это textarea"></textarea>
+            <button>Подтвердить</button>
+        </form>
+        <br>
+        <form>
+            <input type="number" min="-100" max="500" range value="17"></input>
+            <button>Подтвердить</button>
+        </form>
+        <br>
+        <select name="test">
+            <optgroup label="Города">
+                <option value="msk">Москва</option>
+                <option value="spb" selected>Санкт-Петербург</option>
+            </optgroup>
+            <optgroup label="Марианские впадины">
+                <option value="irl">Реальный мир</option>
+                <option value="ppomp">psychopomp</option>
+            </optgroup>
+        </select>
+        </section>
+
+        <hr>
+
+        <section id="tables">
+            <table>
+                <caption>Название таблицы</caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th>Столбец 1</th>
+                        <th>Столбец 2</th>
+                        <th>Столбец 3</th>
+                    </tr>             
+                    <tr><th>Строка 1</th>
+                        <td>1:1</td>
+                        <td>1:2</td>
+                        <td>1:3</td>
+                    </tr>
+                    <tr><th>Строка 2</th>
+                        <th colspan="3">Объед столбцы 2:1/3</th>
+                    </tr>
+                    <tr><th>Строка 3</th></tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
