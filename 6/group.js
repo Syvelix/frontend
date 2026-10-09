@@ -13,17 +13,17 @@ function side_buttoning()
         case 1:
             week1.hidden = false;
             week2.hidden = true;
-            sideBtn.textContent = "Показать первую неделю";
+            sideBtn.textContent = "Первая неделя";
             break;
         case 2:
             week1.hidden = true;
             week2.hidden = false;
-            sideBtn.textContent = "Показать вторую неделю";
+            sideBtn.textContent = "Вторая неделя";
             break;
         case 3:
             week1.hidden = false;
             week2.hidden = false;
-            sideBtn.textContent = "Показать обе недели";
+            sideBtn.textContent = "Обе недели";
             break;
         default:
             sideBtn.textContent = "???";

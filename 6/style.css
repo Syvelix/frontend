@@ -830,6 +830,22 @@ blockquote cite
     color: rgb(0, 214, 132);
 }
 
+.unitable#hobbies
+{
+    border-collapse: separate;
+    border-spacing: 5px 5px;
+}
+
+.unitable tbody#hobbies
+{
+    background-color: #001324;
+}
+
+.unitable tbody#hobbies *
+{
+    color:rgb(247, 30, 30);
+}
+
 .table_group
 {
     text-align: center;
