@@ -22,6 +22,8 @@
     --section_bg_color:rgb(129, 255, 171);
 
     --nav_bg_color_m:rgba(126, 252, 214, 0.479);
+
+    --internal_hover_color:#ce00c4;
 }
 /* //// */
 
@@ -117,7 +119,7 @@ nav a
 
 .nav_button *:hover
 {
-    color:#ce00c4
+    color:var(--internal_hover_color);
 }
 
 .nav_button *
@@ -192,25 +194,16 @@ section.intro /* Раздел с кратким сообщением по тем
     padding: 1em;
 }
 
-section.m_blocks /* Секция на три блока и факта, подходит для некоторых страниц */
+section.adaptive_blocks /* Адаптивная сетка */
 {
     display: grid;
     margin: 0.7rem;
 
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-rows: auto;
 
-    grid-row: 2;
+    grid-row: auto;
     grid-column: 1/-1;
-}
-
-section.adaptive_blocks /* Адаптивная сетка */
-{
-    display: grid;
-    margin: auto;
-
-    grid-template-columns: repeat(auto-fill, 1fr);
-    grid-template-columns: repeat(auto-fill, 1fr);
 }
 
 footer
@@ -240,7 +233,7 @@ a
 
 a:hover
 {
-    color: #ce00c4;
+    color: var(--internal_hover_color);
     font-weight: bold;
     text-decoration: underline;
 }
@@ -651,6 +644,7 @@ blockquote cite
     background-color: rgb(160, 158, 158);
     text-align: justify;
 
+    grid-column: 1/-1;
 }
 
 .unibox#hobbies #games
@@ -806,9 +800,59 @@ blockquote cite
     color: gold !important;
 }
 
+.unitable#lessons_schedule
+{
+    width: 90%;
+}
+
+.unitable tbody#week1
+{
+    background-color: rgb(19, 0, 44);
+}
+
+.unitable tbody#week1 *
+{
+    color: rgb(0, 214, 178);
+}
+
+.unitable tbody#week1 #bloody
+{
+    color: rgb(129, 0, 0);
+}
+
+.unitable tbody#week2
+{
+    background-color: rgb(0, 35, 44);
+}
+
+.unitable tbody#week2 *
+{
+    color: rgb(0, 214, 132);
+}
+
 .table_group
 {
     text-align: center;
+}
+
+button#lessons_schedule_btn
+{
+    display: inline-block;
+    margin-bottom: 5px;
+
+    background:none;
+
+    font-size: larger;
+    width: minmax(5em, 10em);
+    grid-column: 2;
+
+    background-color: #7af1fa;
+    border-radius: 0.5rem;
+}
+
+button#lessons_schedule_btn:hover
+{
+    color:var(--internal_hover_color);
 }
 
 .lol
@@ -897,6 +941,11 @@ blockquote cite
     {
         grid-column: 1/-1;
         grid-row: auto;
+    }
+
+    .unitable#lessons_schedule
+    {
+        width: 95%;
     }
     
     nav

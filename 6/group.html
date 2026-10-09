@@ -46,7 +46,7 @@
             </section>
 
             <!--Основной раздел-->
-            <section class="m_blocks">
+            <section class="adaptive_blocks">
                 <article class="unibox" id="group">
                     <h2>Список студентов группы</h2>
                     <ul >
@@ -82,6 +82,225 @@
                         <li>Шальнев Г.С.</li>
                     </ul>
                 </article>
+
+                <table class="unitable" id="lessons_schedule">
+                    
+                    <caption><h2>Расписание пар</h2></caption>
+                    <caption><button id="lessons_schedule_btn">Показать обе недели</button></caption>
+                    <thead id="table_naming">
+                        <tr>
+                            <th>День</th>
+                            <th>Номер пары</th>
+                            <th>Предмет</th>
+                            <th>Подгруппа</th>
+                        </tr>
+                    </thead>
+                    <tbody id="week1">
+                        <tr><th colspan="4">Первая неделя</th></tr>                        
+                    <!--Понедельник-->
+                        <tr>
+                            <td rowspan="5">Понедельник</td>
+                            <td>3</td>
+                            <td>Английский язык</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ВвПиА</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ИТиП</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Введение во frontend</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Введение в DevOps</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Вторник-->
+                            <tr>
+                                <td rowspan="3">Вторник</td>
+                                <td>2</td>
+                                <td>Физ-ра</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td id="bloody">Введение в матанализ</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>История России</td>
+                                <td>1,2</td>
+                            </tr>
+                        <!--Среда-->
+                            <tr>
+                                <td rowspan="3">Среда</td>
+                                <td>4</td>
+                                <td>ВвПиА</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>История России</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>ИТиП</td>
+                                <td>2</td>
+                            </tr>
+                        <!--Четверг-->
+                            <tr>
+                                <td rowspan="3">Четверг</td>
+                                <td>1</td>
+                                <td>Алгебра</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td id="bloody">Введение в матанализ</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Алгебра</td>
+                                <td>1,2</td>
+                            </tr>
+                        <!--Пятница-->
+                            <tr>
+                                <td rowspan="2">Пятница</td>
+                                <td>6</td>
+                                <td>Введение в DevOps</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Введение в DevOps</td>
+                                <td>1,2</td>
+                            </tr>
+                        <!--Суббота-->
+                            <tr>
+                                <td rowspan="2">Суббота</td>
+                                <td>1</td>
+                                <td>ИКРРРиГ</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>ИКРРРиГ</td>
+                                <td>1,2</td>
+                            </tr>
+                    </tbody>
+                    <tbody id="week2">
+                        <tr><th colspan="4">Вторая неделя</th></tr>
+                    <!--Понедельник-->
+                        <tr>
+                            <td rowspan="5">Понедельник</td>
+                            <td>3</td>
+                            <td>Английский язык</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ВвПиА</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ИТиП</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Введение во frontend</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Введение в DevOps</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Вторник-->
+                        <tr>
+                            <td rowspan="2">Вторник</td>
+                            <td>1</td>
+                            <td>История России</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ИТиП</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Среда-->
+                        <tr>
+                            <td rowspan="3">Среда</td>
+                            <td>4</td>
+                            <td>ВвПиА</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ВвПиА</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>ИТиП</td>
+                            <td>2</td>
+                        </tr>
+                    <!--Четверг-->
+                        <tr>
+                            <td rowspan="2">Четверг</td>
+                            <td>1</td>
+                            <td>Алгебра</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ВвПиА</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Пятница-->
+                        <tr>
+                            <td rowspan="2">Пятница</td>
+                            <td>5</td>
+                            <td>Стилсофт</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Стилсофт</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Суббота-->
+                        <tr>
+                            <td rowspan="3">Суббота</td>
+                            <td>3</td>
+                            <td>МДПП-1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>МДПП-1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Проектная деятельность</td>
+                            <td>1,2</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <!--Интересный факт-->
                 <aside class="fun">
                     <strong class="bold">Интересный факт: </strong> существует также группа <b>ПИЖ-б-о-26-1</b>. Она тоже относится к программной инженерии, но имеет немного другую специализацию.
@@ -101,5 +320,6 @@
         <footer>
 
         </footer>
+        <script src="group.js"></script>
     </body>
 </html>
