@@ -575,7 +575,8 @@ blockquote cite
 .unibox#feedback input,
 .unibox#signup input,
 .unibox#signup select,
-.unibox#signup select option
+.unibox#signup select option,
+.unibox#news input
 {
     display: inline-block;
 
@@ -594,9 +595,15 @@ blockquote cite
     color:#15ff00
 }
 
+.unibox#news input
+{
+    width: unset;
+}
+
 .unibox#feedback textarea:focus,
 .unibox#feedback input:focus,
-.unibox#signup input:focus
+.unibox#signup input:focus,
+.unibox#news input:focus
 {
     outline-color: #007d9c;
 }
@@ -609,7 +616,8 @@ blockquote cite
     transform: scale(1.5);
 }
 
-.unibox#feedback button
+.unibox#feedback button,
+.unibox#news button
 {
     background-color: #002933;
     border-color: #006e37;
@@ -620,8 +628,27 @@ blockquote cite
     border-style: solid;
 }
 
+.unibox#news form
+{
+    display: grid;
+}
+
+.unibox#news form input
+{
+    grid-column: 1;
+    grid-row: auto;
+}
+
+.unibox#news form button
+{
+    grid-column: 2;
+    grid-row: auto;
+}
+
+
 .unibox#feedback button:hover,
-.unibox#signup button:hover
+.unibox#signup button:hover,
+.unibox#news button:hover
 {
     color: var(--internal_hover_color);
     background-color: #050033;
