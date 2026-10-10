@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style.css">
         <title>Увлечения</title>
     </head>
-
     <body>
         <!--Заголовок страницы-->
         <header>
@@ -16,27 +15,22 @@
                 <img src="../media/images/Enco.webp" alt="Logo" title="Логотип Enco">
             </div>
         </header>
-
         <!--Кнопка наверх-->
         <aside class="up">
             <a href="#top">⬆️</a>
         </aside>
-        
         <!--Меню навигации-->
         <input type="checkbox" id="nav_toggle">
         <label for="nav_toggle" class="nav_button">
             <span class="closed">Меню</span>
             <span class="opened">Закрыть</span>
         </label>
-
         <nav class="pc">
-        <a href="main.html">Главная</a>  |  <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="group.html">Группа</a>
+        <a href="main.html">Главная</a>  |  <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="group.html">Группа</a>  |  <a href="signup.html">Регистрация</a>
         </nav>
-
         <nav class="mobile">
-        <a href="main.html">Главная</a><hr><a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="group.html">Группа</a>
+        <a href="main.html">Главная</a><hr><a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="group.html">Группа</a><hr><a href="signup.html">Регистрация</a>
         </nav>
-        
         <!--Основная часть-->
         <main>
             <!--Небольшое введение-->
@@ -48,12 +42,11 @@
                     Возможно, их не так уж и много, но зато я могу уделять больше времени каждому из них.
                     <br>
                 </span>
-            </article>
-            <h3 class="center_text">Итак, я увлекаюсь:</h3>
+                <h3 class="center_text">Итак, я увлекаюсь:</h3>
+            </section>
             <!--Список увлечений-->
             <section class="adaptive_blocks">
                 <section class="unibox" id="hobbies">
-                    
                         <article class="unibox" id="games">
                             <a href="https://steamcommunity.com/id/sigmasignal/" target="_blank" class="external"><img src="../media/images/steam.webp" title="Мой Steam" alt="Steam автора" width="64" height="64" class="pretty_img" id="steamicon"></a>
                             <br>
@@ -89,25 +82,20 @@
                                     </li>
                                 </ul>
                         </article>
-
                         <article class="unibox" id="books">
                             <img src="../media/images/книга.webp" title="Книжка" alt="Книжка" width="128" height="148" class="pretty_img">
                             Чтением книг
                         </article>
-
                         <article class="unibox" id="mountains">
                         <img src="../media/images/гора.webp" title="Гора" alt="Гора" width="208" height="128" class="pretty_img">
                         Прогулками по горам
                         </article>
-
                         <article class="unibox" id="coding">
                             <img src="../media/images/vscode.webp" title="VS Code icon" alt="VS Code icon" width="128" height="128" class="pretty_img" id="vscode_icon">
                             <a href="https://github.com/Syvelix" target="_blank" class="external">Программированием</a>
                         </article>
-
                 </section>
-
-                <table class="unitable" id="hobbies">
+                <table class="unitable" id="hobbies_table">
                     <caption><h2>Краткая сводка увлечений</h2></caption>
                     <thead>
                         <tr>
@@ -116,7 +104,7 @@
                             <th>Оценка</th>
                         </tr>
                     </thead>
-                    <tbody id="hobbies">
+                    <tbody id="hobbies_body">
                         <tr>
                             <td>Компьютерные игры</td>
                             <td>Давнее увлечение. Открывают бесконечные миры. Впрочем, я предпочитаю лишь немногие из них.</td>
@@ -139,18 +127,13 @@
                         </tr>
                     </tbody>
                 </table>
-
                 <!--Инетересный факт-->
                 <aside class="fun">
                     <strong class="bold">Интересный факт: </strong>люблю проходить игры идеально на самой высокой сложности.
                 </aside>
             </section>
-
-            
         </main>
-
         <hr>
-
         <!--Подвал сайта, пока пуст, объявлен для семантики-->
         <footer>
 

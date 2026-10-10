@@ -194,7 +194,7 @@ section.intro /* Раздел с кратким сообщением по тем
     padding: 1em;
 }
 
-section.adaptive_blocks /* Адаптивная сетка */
+.adaptive_blocks /* Адаптивная сетка */
 {
     display: grid;
     margin: 0.7rem;
@@ -564,6 +564,69 @@ blockquote cite
     text-align: center;
 }
 
+.unibox#feedback
+{
+    background: none;
+    grid-column: 2;
+    border-style: none;
+}
+
+.unibox#feedback textarea,
+.unibox#feedback input,
+.unibox#signup input,
+.unibox#signup select,
+.unibox#signup select option
+{
+    display: inline-block;
+
+    width: 95%;
+    box-sizing: content-box;
+    resize:vertical;
+
+    border-width: 0.1em;
+    border-style: solid;
+
+    margin-left: 2%;
+    margin-bottom: 2%;
+    
+    background-color:#002933;
+    border-color: #006e37;
+    color:#15ff00
+}
+
+.unibox#feedback textarea:focus,
+.unibox#feedback input:focus,
+.unibox#signup input:focus
+{
+    outline-color: #007d9c;
+}
+
+.unibox#feedback input[type="checkbox"]
+{
+    display: inline;
+    width: unset;
+    margin-left: 45%;
+    transform: scale(1.5);
+}
+
+.unibox#feedback button
+{
+    background-color: #002933;
+    border-color: #006e37;
+    color:#15ff00;
+
+
+    border-width: 0.1em;
+    border-style: solid;
+}
+
+.unibox#feedback button:hover,
+.unibox#signup button:hover
+{
+    color: var(--internal_hover_color);
+    background-color: #050033;
+}
+
 .unibox#about
 {
     padding: 1rem;
@@ -656,7 +719,6 @@ blockquote cite
 
     grid-column: 2;
     grid-row: 1;
-    
 }
 
 .unibox#hobbies #games *
@@ -705,6 +767,73 @@ blockquote cite
     grid-row: minmax(2, 2/3);
 }
 
+.unibox#signup
+{
+    grid-column: 1/-1;
+    background-color: #d7e4f8;
+}
+
+.unibox#signup input
+{
+    display: inline-block;
+}
+
+.unibox#signup label
+{
+    margin-top: 1%;
+}
+
+.unibox#signup label[for="kidney"]
+{
+    margin-left: 2%;
+    width: unset;
+    text-align: start;
+}
+
+.unibox#signup input[type="radio"]
+{
+    width: unset;
+}
+
+.unibox#signup #kidney_cons
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+}
+
+.unibox#signup #kidney_cons input[type="checkbox"]
+{
+    width: auto;
+    margin: 0;
+    transform: scale(1.3);
+}
+
+.unibox#signup div
+{
+    text-align: center;
+}
+
+.unibox#signup button
+{
+    display: block;
+    background-color: #002933;
+    border-color: #006e37;
+    color:#15ff00;
+
+
+    border-width: 0.1em;
+    border-style: solid;
+
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 0.5em;
+
+    border-radius: 0.5rem;
+    font-size: large;
+}
+
 .unibox#not_found
 {
     grid-column: 1/-1;
@@ -712,8 +841,6 @@ blockquote cite
     padding: 0.5rem;
 
     justify-content: center;
-    
-    
 }
 
 .unibox#not_found *
@@ -815,7 +942,7 @@ blockquote cite
     color: rgb(0, 214, 178);
 }
 
-.unitable tbody#week1 #bloody
+.unitable tbody#week1 .bloody
 {
     color: rgb(129, 0, 0);
 }
@@ -830,18 +957,18 @@ blockquote cite
     color: rgb(0, 214, 132);
 }
 
-.unitable#hobbies
+.unitable#hobbies_table
 {
     border-collapse: separate;
     border-spacing: 5px 5px;
 }
 
-.unitable tbody#hobbies
+.unitable tbody#hobbies_body
 {
     background-color: #001324;
 }
 
-.unitable tbody#hobbies *
+.unitable tbody#hobbies_body *
 {
     color:rgb(247, 30, 30);
 }
@@ -869,6 +996,22 @@ button#lessons_schedule_btn
 button#lessons_schedule_btn:hover
 {
     color:var(--internal_hover_color);
+}
+
+label#feedback_lbl
+{
+    display: inline-block;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: #00a5ce;
+    background-color: #001324;
+    margin-bottom: 5%;
+}
+
+label#feedback_lbl h3:hover
+{
+    color: var(--internal_hover_color);
 }
 
 .lol
@@ -959,7 +1102,7 @@ button#lessons_schedule_btn:hover
         grid-row: auto;
     }
 
-    .unitable#lessons_schedule
+    .unitable
     {
         width: 95%;
     }
@@ -1037,7 +1180,7 @@ button#lessons_schedule_btn:hover
 
     nav
     {
-        width: 105px;
+        width: 120px;
     }
 
     nav a

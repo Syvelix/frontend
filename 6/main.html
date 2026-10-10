@@ -29,11 +29,11 @@
         </label>
 
         <nav class="pc">
-            <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="hobbies.html">Увлечения</a>  |  <a href="group.html">Группа</a>
+            <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="hobbies.html">Увлечения</a>  |  <a href="group.html">Группа</a>  |  <a href="signup.html">Регистрация</a>
         </nav>
 
         <nav class="mobile">
-            <a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="hobbies.html">Увлечения</a><hr><a href="group.html">Группа</a>
+            <a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="hobbies.html">Увлечения</a><hr><a href="group.html">Группа</a><hr><a href="signup.html">Регистрация</a>
         </nav>
 
         <!--Блок с цитатой-->
@@ -46,8 +46,6 @@
             </cite>
         </blockquote>
         
-        
-
         <!--Основная часть-->
         <main>
             <section class="intro">
@@ -72,15 +70,13 @@
                     <h2>Новости</h2>
                     <ol>
                         <li>Сегодня (в субботу) у меня нет пар! Замечательно!</li>
-                        <br>
                         <li><a href="https://www.ign.com/articles/deltarune-chapter-6-will-release-in-2027-chapter-5-shatters-concurrent-player-records-on-steam" class="external" target="_blank">Выход шестой главы дельтаруна запланирован на 2027г.</a></li>
-                        <br>
-                        <li><a href="https://time.com/article/2026/09/15/ai-anthropic-researcher-quits-coxon-slowdown/" class="external" target="_blank">Anthropic призывает замедлить развитие ИИ</a></li></ol>
+                        <li><a href="https://time.com/article/2026/09/15/ai-anthropic-researcher-quits-coxon-slowdown/" class="external" target="_blank">Anthropic призывает замедлить развитие ИИ</a></li>
                     </ol>
                     <form>
                         <label for="subscribe">Подписаться на новости</label>
                         <input type="email" id="subscribe" name="subscribe" placeholder="Введите email">
-                        <button>Подтвердить</button>
+                        <button type="submit">Подтвердить</button>
                     </form>
                 </article>
                 <!--Характеристии ПК-->
@@ -107,7 +103,20 @@
         
         <!--Подвал-->
         <footer>
+            <article class="unibox" id="feedback">
+            <label id="feedback_lbl"><h3 class="center_text">Обратная связь</h3></label>
+            <form id="feedback_form" hidden>
+                <input type="text" required placeholder="Имя">
+                <input required type="email" placeholder="Email">
+                <input type="text" required placeholder="Тема">
+                <textarea required rows="10" placeholder="Сообщение"></textarea>
+                <button type="submit">Отправить</button><input required id="checkbox" type="checkbox">
+            </form>
+            </article>
+            <br>
             <em class="unibox" id="mfooter_box"><a href="https://steamcommunity.com/id/sigmasignal/" target="_blank" class="external">Мой Steam</a></em>
         </footer>
+
+        <script src="main.js"></script>
     </body>
 </html>

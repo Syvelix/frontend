@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Регистрация</title>
+    </head>
+
+    <body>
+        <!--Название страницы-->
+        <header>
+            <div class="stylebox">
+                <h1>Регистрация</h1>
+                <img src="../media/images/Enco.webp" alt="Logo" title="Логотип Enco">
+            </div>
+        </header>
+
+        <!--Меню навигации-->
+        <input type="checkbox" id="nav_toggle">
+        <label for="nav_toggle" class="nav_button">
+            <span class="closed">Меню</span>
+            <span class="opened">Закрыть</span>
+        </label>
+
+        <nav class="pc">
+            <a href="main.html">Главная</a>  |  <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="hobbies.html">Увлечения</a>  |  <a href="group.html">Группа</a>
+        </nav>
+
+        <nav class="mobile">
+            <a href="main.html">Главная</a><hr><a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="hobbies.html">Увлечения</a><hr><a href="group.html">Группа</a><hr><a href="signup.html">Регистрация</a>
+        </nav>
+
+        <!--Основная часть-->
+        <main class="adaptive_blocks">
+            <article class="unibox" id="signup">
+                <form>
+                    <br>
+                    <label for="first_name" class="center_text">Имя</label>
+                    <br>
+                    <input type="text" id="first_name" required placeholder="Имя">
+                    <br>
+                    <label for="second_name" class="center_text">Фамилия</label>
+                    <br>
+                    <input type="text" id="second_name" required placeholder="Фамилия">
+                    <br>
+                    <label for="date" class="center_text">Дата рождения</label>
+                    <br>
+                    <input id="date" required type="date">
+                    <br>
+                    <label class="center_text">Пол</label>
+                    <div>
+                    Ж<input type="radio" name="sex" value="F">  М<input type="radio" name="sex" value="M">
+                    </div>
+                    <br>
+                    <label for="country" class="center_text">Страна</label>
+                    <br>
+                    <select id="country" name="country">
+                        <option value="russia">Россия</option>
+                        <option value="usa">США</option>
+                        <option value="canada">Канада</option>
+                        <option value="swiss">Швеция</option>
+                        <option value="japan">Япония</option>
+                        <option value="uk">Британия</option>
+                    </select>
+                    <br>
+                    <label for="pwd" class="center_text">Пароль</label>
+                    <br>
+                    <input id="pwd" autocomplete="new-password" required type="password" placeholder="Пароль">
+                    <br>
+                    <label for="repwd" class="center_text">Подтверждение пароля</label>
+                    <br>
+                    <input id="repwd" required autocomplete="new-password" type="password" placeholder="Повторите пароль">
+                    <br>
+                    <label for="photo" class="center_text">Фото</label>
+                    <br>
+                    <input id="photo" type="file">
+                    <br>
+                    <div id="kidney_cons">
+                        <label for="kidney" class="center_text">Согласен на продажу почки</label>
+                        <input required id="kidney" type="checkbox">
+                    </div>
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+            </article>
+        </main>
+
+    </body>
+</html>
