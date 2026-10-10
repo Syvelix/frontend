@@ -73,6 +73,7 @@
                         <li><a href="https://www.ign.com/articles/deltarune-chapter-6-will-release-in-2027-chapter-5-shatters-concurrent-player-records-on-steam" class="external" target="_blank">Выход шестой главы дельтаруна запланирован на 2027г.</a></li>
                         <li><a href="https://time.com/article/2026/09/15/ai-anthropic-researcher-quits-coxon-slowdown/" class="external" target="_blank">Anthropic призывает замедлить развитие ИИ</a></li>
                     </ol>
+                    <!--Подписка на новости-->
                     <form method="post">
                         <label for="subscribe">Подписаться на новости</label>
                         <input type="email" id="subscribe" name="subscribe" placeholder="Введите email">
@@ -105,11 +106,17 @@
         <footer>
             <article class="unibox" id="feedback">
             <label id="feedback_lbl"><h3 class="center_text">Обратная связь</h3></label>
+            <!--Форма обратной связи-->
             <form method="post" id="feedback_form" hidden>
+                <!--Ввод имени-->
                 <input type="text" required placeholder="Имя">
+                <!--Ввод email-->
                 <input required type="email" placeholder="Email">
+                <!--Ввод темы-->
                 <input type="text" required placeholder="Тема">
+                <!--Ввод сообщения-->
                 <textarea required rows="10" placeholder="Сообщение"></textarea>
+                <!--Кнопка отправки (подтверждения)-->
                 <button type="submit">Отправить</button><input required id="checkbox" type="checkbox">
             </form>
             </article>

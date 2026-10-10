@@ -34,27 +34,33 @@
         <!--Основная часть-->
         <main class="adaptive_blocks">
             <article class="unibox" id="signup">
+                <!--Форма регистрации-->
                 <form method="post">
                     <br>
                     <label for="first_name" class="center_text">Имя</label>
                     <br>
+                    <!--Ввод имени-->
                     <input type="text" id="first_name" required placeholder="Имя">
                     <br>
                     <label for="second_name" class="center_text">Фамилия</label>
                     <br>
+                    <!--Ввод фамилии-->
                     <input type="text" id="second_name" required placeholder="Фамилия">
                     <br>
                     <label for="date" class="center_text">Дата рождения</label>
                     <br>
+                    <!--Выбор даты рождения, через date-->
                     <input id="date" required type="date">
                     <br>
                     <label class="center_text">Пол</label>
                     <div>
-                    Ж<input type="radio" name="sex" value="F">  М<input type="radio" name="sex" value="M">
+                        <!--Выбор пола, через radio-->
+                        Ж<input type="radio" name="sex" value="F">  М<input type="radio" name="sex" value="M">
                     </div>
                     <br>
                     <label for="country" class="center_text">Страна</label>
                     <br>
+                    <!--Выбор страны, через select-->
                     <select id="country" name="country">
                         <option value="russia">Россия</option>
                         <option value="usa">США</option>
@@ -66,24 +72,28 @@
                     <br>
                     <label for="pwd" class="center_text">Пароль</label>
                     <br>
+                    <!--Ввод пароля с валидацией-->
                     <input id="pwd" autocomplete="new-password" required type="password" placeholder="Пароль">
                     <br>
                     <label for="repwd" class="center_text">Подтверждение пароля</label>
                     <br>
+                    <!--Повтор пароля с валидацией-->
                     <input id="repwd" required autocomplete="new-password" type="password" placeholder="Повторите пароль">
                     <br>
                     <label for="photo" class="center_text">Фото</label>
                     <br>
+                    <!--Загрузка фото через file, необязательна-->
                     <input id="photo" type="file">
                     <br>
                     <div id="kidney_cons">
                         <label for="kidney" class="center_text">Согласен на продажу почки</label>
+                        <!--Чекбокс согласия-->
                         <input required id="kidney" type="checkbox">
                     </div>
+                    <!--Кнопка отправки (подтверждения)-->
                     <button type="submit">Зарегистрироваться</button>
                 </form>
             </article>
         </main>
-
     </body>
 </html>
