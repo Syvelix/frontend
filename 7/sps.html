@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Доп. задание</title>
+    </head>
+    <body>
+        <!--Название страницы-->
+        <header>
+            <div class="stylebox">
+                <h1>ИИ</h1>
+                <img src="../media/images/Enco.webp" alt="Logo" title="Логотип Enco">
+            </div>
+        </header>
+
+        <!--Меню навигации-->
+        <input type="checkbox" id="nav_toggle">
+        <label for="nav_toggle" class="nav_button">
+            <span class="closed">Меню</span>
+            <span class="opened">Закрыть</span>
+        </label>
+
+        <nav class="pc">
+            <a href="main.html">Главная</a>  |  <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="hobbies.html">Увлечения</a>  |  <a href="group.html">Группа</a>  |  <a href="signup.html">Регистрация</a>
+        </nav>
+
+        <nav class="mobile">
+            <a href="main.html">Главная</a><hr><a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="hobbies.html">Увлечения</a><hr><a href="group.html">Группа</a><hr><a href="signup.html">Регистрация</a>
+        </nav>
+
+        <main class="adaptive_blocks">
+            <section class="intro">
+                <h2>Платформа для специалистов в области ИИ</h2>
+                <span class="center_text bold">Мы предлагаем вам:</span>
+            </section>
+            <section class="unibox ai_perks">
+                <h2>Доступ к единому информационно-коммуникационному пространству</h2>
+                <hr>
+                <span class="center_text">Здесь вы можете обменяться опытом со специалистами и поделиться своим</span>
+            </section>
+            <section class="unibox ai_perks">
+                <h2>Возможность обучать ИИ-модели</h2>
+                <hr>
+                <span class="center_text">Арендуйте наше оборудование для обучения ваших моделей. Используйте наши датасеты или загружайте собственные</span>
+            </section>
+            <section class="unibox ai_perks">
+                <h2>Использование наработок других организаций и пользователей</h2>
+                <hr>
+                <span class="center_text">Делитесь своими работами и используйте доступные наработки других</span>
+            </section>
+            <aside class="fun">
+                <strong class="bold">Интересный факт:</strong>
+                Предоставляемые нами услуги ИИ <span id="diabolic"> не должны</span> использоваться для создания искусства. На этом точка.
+            </aside>
+        </main>
+    </body>
+</html>

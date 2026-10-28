@@ -1,0 +1,317 @@
+<!--Группа-->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Группа</title>
+    </head>
+    <body>
+        <!--Заголовок-->
+        <header>
+            <div class="stylebox">
+                <h1>Группа</h1>
+                <img src="../media/images/Enco.webp" alt="Logo" title="Логотип Enco">
+            </div>
+        </header>
+
+        <!--Кнопка наверх-->
+        <aside class="up">
+            <a href="#top">⬆️</a>
+        </aside>
+
+        <!--Навигационное меню-->
+        <input type="checkbox" id="nav_toggle">
+        <label for="nav_toggle" class="nav_button">
+            <span class="closed">Меню</span>
+            <span class="opened">Закрыть</span>
+        </label>
+        
+        <nav class="pc">
+            <a href="main.html">Главная</a>  |  <a href="about.html">Обо мне</a>  |  <a href="friends.html">Друзья</a>  |  <a href="hobbies.html">Увлечения</a>  |  <a href="signup.html">Регистрация</a>  |  <a href="sps.html">ИИ</a>
+        </nav>
+
+        <nav class="mobile">
+            <a href="main.html">Главная</a><hr><a href="about.html">Обо мне</a><hr><a href="friends.html">Друзья</a><hr><a href="hobbies.html">Увлечения</a><hr><a href="signup.html">Регистрация</a><hr><a href="sps.html">ИИ</a>
+        </nav>
+
+        <!--Основная часть страницы-->
+        <main>
+            <section class="intro">
+                <!--Немного о группе-->
+                <span class="center_text">Моя группа - <strong>ПИЖ-б-о-26-2</strong>.
+                <br>
+                Есть две подгруппы, я отношусь ко второй.</span>
+            </section>
+
+            <!--Основной раздел-->
+            <section class="adaptive_blocks">
+                <article class="unibox" id="group">
+                    <h2>Список студентов группы</h2>
+                    <ul >
+                        <h3>ПИЖ-б-о-26-2 (1)</h3>
+                        <li>Бакандила И.Д.Л.Р.</li>
+                        <li>Вдовыдченко И.А.</li>
+                        <li>Долгих С.Е.</li>
+                        <li>Дрищёв К.С.</li>
+                        <li>Мирзахаян А.Г.</li>
+                        <li>Мовзалевская В.В.</li>
+                        <li>Мойдунова А.Ш.</li>
+                        <li>Москвитин В.Р.</li>
+                        <li>Павлючков А.Ю.</li>
+                        <li>Попков И.А.</li>
+                        <li>Путятин И.Н.</li>
+                        <li>Рамалданов Р.Т.</li>
+                        <li>Сафонов Я.В.</li>
+                    
+                        <h3>ПИЖ-б-о-26-2 (2)</h3>
+                        <li>Захаров П.А.</li>
+                        <li>Игнатова А.В.</li>
+                        <li>Магомадов Ю.М.</li>
+                        <li>Сологуб А.А.</li>
+                        <li>Спирянов И.В.</li>
+                        <li>Стрелков Р.В.</li>
+                        <li>Тагиров Э.Н.</li>
+                        <li>Тоев У.А.</li>
+                        <li>Тоторкулова А.Р.</li>
+                        <li>Трушинский С.А.</li>
+                        <li>Тукаева А.М.</li>
+                        <li>Тюнин К.В.</li>
+                        <li><em><a href="about.html">Фальчиков М.С.</a></em></li>
+                        <li>Шальнев Г.С.</li>
+                    </ul>
+                </article>
+
+                <table class="unitable" id="lessons_schedule">
+                    
+                    <caption><h2>Расписание пар</h2></caption>
+                    <caption><button id="lessons_schedule_btn">Обе недели</button></caption>
+                    <thead id="table_naming">
+                        <tr>
+                            <th scope="col">День</th>
+                            <th scope="col">Номер пары</th>
+                            <th scope="col">Предмет</th>
+                            <th scope="col">Подгруппа</th>
+                        </tr>
+                    </thead>
+                    <tbody id="week1">
+                        <tr><th colspan="4">Первая неделя</th></tr>                        
+                    <!--Понедельник-->
+                        <tr>
+                            <td rowspan="5">Понедельник</td>
+                            <td>3</td>
+                            <td>Английский язык</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ВвПиА</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ИТиП</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Введение во frontend</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Введение в DevOps</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Вторник-->
+                            <tr>
+                                <td rowspan="3">Вторник</td>
+                                <td>2</td>
+                                <td>Физ-ра</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="bloody">Введение в матанализ</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>История России</td>
+                                <td>1,2</td>
+                            </tr>
+                        <!--Среда-->
+                            <tr>
+                                <td rowspan="3">Среда</td>
+                                <td>4</td>
+                                <td>ВвПиА</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>История России</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>ИТиП</td>
+                                <td>2</td>
+                            </tr>
+                        <!--Четверг-->
+                            <tr>
+                                <td rowspan="3">Четверг</td>
+                                <td>1</td>
+                                <td>Алгебра</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="bloody">Введение в матанализ</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Алгебра</td>
+                                <td>1,2</td>
+                            </tr>
+                        <!--Пятница-->
+                            <tr>
+                                <td rowspan="2">Пятница</td>
+                                <td>6</td>
+                                <td>Введение в DevOps</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Введение в DevOps</td>
+                                <td>1,2</td>
+                            </tr>
+                        <!--Суббота-->
+                            <tr>
+                                <td rowspan="2">Суббота</td>
+                                <td>1</td>
+                                <td>ИКРРРиГ</td>
+                                <td>1,2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>ИКРРРиГ</td>
+                                <td>1,2</td>
+                            </tr>
+                    </tbody>
+                    <tbody id="week2">
+                        <tr><th colspan="4">Вторая неделя</th></tr>
+                    <!--Понедельник-->
+                        <tr>
+                            <td rowspan="5">Понедельник</td>
+                            <td>3</td>
+                            <td>Английский язык</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ВвПиА</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>ИТиП</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Введение во frontend</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Введение в DevOps</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Вторник-->
+                        <tr>
+                            <td rowspan="2">Вторник</td>
+                            <td>1</td>
+                            <td>История России</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ИТиП</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Среда-->
+                        <tr>
+                            <td rowspan="3">Среда</td>
+                            <td>4</td>
+                            <td>ВвПиА</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>ВвПиА</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>ИТиП</td>
+                            <td>2</td>
+                        </tr>
+                    <!--Четверг-->
+                        <tr>
+                            <td rowspan="2">Четверг</td>
+                            <td>1</td>
+                            <td>Алгебра</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ВвПиА</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Пятница-->
+                        <tr>
+                            <td rowspan="2">Пятница</td>
+                            <td>5</td>
+                            <td>Стилсофт</td>
+                            <td>1,2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Стилсофт</td>
+                            <td>1,2</td>
+                        </tr>
+                    <!--Суббота-->
+                        <tr>
+                            <td rowspan="3">Суббота</td>
+                            <td>3</td>
+                            <td>МДПП-1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>МДПП-1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Проектная деятельность</td>
+                            <td>1,2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Интересный факт-->
+                <aside class="fun">
+                    <strong class="bold">Интересный факт: </strong> существует также группа <b>ПИЖ-б-о-26-1</b>. Она тоже относится к программной инженерии, но имеет немного другую специализацию.
+                </aside>
+            </section>
+        </main>
+
+        <!--Подвал сайта, пока пуст, объявлен для семантики-->
+        <footer>
+
+        </footer>
+        <script src="group.js"></script>
+    </body>
+</html>
