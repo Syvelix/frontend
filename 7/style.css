@@ -17,9 +17,11 @@
     --header_bg_color:rgb(243, 239, 227);
     --nav_bg_color:rgba(126, 252, 214, 0.74);
     --body_bg_color:rgba(128, 31, 255, 0.322);
-    --footer_bg_color:rgb(2, 2, 1);
+    --footer_bg_color1:rgba(0, 18, 66, 0.445);
+    --footer_bg_color2:rgb(0, 18, 66);
     --main_bg_color:rgb(130, 180, 255);
-    --section_bg_color:rgb(129, 255, 171);
+    --section_bg_color1:rgb(129, 255, 171);
+    --section_bg_color2:rgb(175, 255, 129);
 
     --nav_bg_color_m:rgba(126, 252, 214, 0.479);
 
@@ -27,6 +29,7 @@
 
     --hover_shadow_color:rgba(0, 0, 0, 0.329);
     --default_shadow_color:rgba(0, 0, 0, 0.445);
+    --antishadow_color: rgba(255, 255, 255, 0.445);
 }
 /* //// */
 
@@ -181,7 +184,7 @@ section
 {
     border-radius: 1.1rem;
     padding: 0.1%;
-    background-color: var(--section_bg_color);
+    background: linear-gradient(to bottom, var(--section_bg_color1), var(--section_bg_color2));
 }
 
 section.intro /* Раздел с кратким сообщением по теме страницы */
@@ -216,13 +219,13 @@ footer
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    border-color: #002933;
     border-style: solid;
+    border-radius: 0.3rem;
     margin-left: -0.5%;
     margin-right: -0.5%;
 
     padding: 2%;
-    background-color: var(--footer_bg_color);
+    background: linear-gradient(to bottom, var(--footer_bg_color1), var(--footer_bg_color2));
 
     text-align: center;
 }
@@ -234,6 +237,7 @@ a
 {
     color: #00a5ce;
     text-decoration: none;
+    transition: color 0.5s ease;
 }
 
 a:hover
@@ -295,6 +299,7 @@ h3
     color:rgb(0, 139, 74);
     font-family:"Undertale";
     font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 h4
@@ -363,7 +368,7 @@ hr
     border-color: rgb(151, 39, 255);
 
     border-radius: 1.1rem;
-    background-color: #f58989;
+    background: linear-gradient(45deg, #f58989 30%, #ff0000) ;
 
     margin: 1.1em;
     padding: 1rem;
@@ -409,7 +414,8 @@ hr
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
 
-    background-color: rgb(255, 104, 235);
+    background: linear-gradient(to bottom, rgb(255, 104, 235), rgb(182, 104, 255));
+
 
     border-radius: 0.5rem;
     border-style: solid;
@@ -493,7 +499,7 @@ hr
 {
     padding: 1rem;
     
-    background-color: #92f2ff;
+    background: linear-gradient(-20deg, #92ffff, #92d3ff);
     text-align: justify;
 
     grid-column: 1;
@@ -503,7 +509,7 @@ hr
 {
     padding: 1rem;
     
-    background-color: #5c9ef5;
+    background: linear-gradient(45deg, #5c9ef5 35%,  #3019fc);
     text-align: justify;
 
     grid-column: 2;
@@ -514,7 +520,7 @@ hr
     padding: 1rem;
     
     font-size: 20px;
-    background-color: #001324;
+    background: linear-gradient(-60deg,  #001324,  #003436 70%);
     text-align: justify;
 
     border-color: rgb(0, 81, 255);
@@ -532,6 +538,7 @@ hr
 .unibox#PC_stats ul
 {
     list-style: lower-greek;
+    margin-left: 0.3rem;
 }
 
 .unibox#PC_stats ul li
@@ -882,13 +889,14 @@ hr
 
     padding: 0.5rem;
 
-    background-color: rgb(0, 224, 253);
     border-color: #000c00;
 
     justify-content: center;
     
     grid-column: auto;
     grid-row: auto;
+
+    background: radial-gradient(circle at 20% 80%, rgb(0, 224, 253), rgb(0, 253, 34));
 }
 
 .unibox.ai_perks h2 
@@ -1097,15 +1105,25 @@ label#feedback_lbl h3:hover
 .fun,
 .unibox:not(#hobbies)
 {
-    box-shadow: 0 0.1em 0.2em var(--default_shadow_color);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.fun,
+.unibox:not(#hobbies, #feedback)
+{
+    box-shadow: 0 0.1em 0.2em var(--default_shadow_color);
 }
 
 .fun:hover,
 .unibox:hover:not(#hobbies)
 {
-   box-shadow: 0 0.1em 0.25em var(--hover_shadow_color);
-   transform: translateY(-4px);
+   transform: translateY(-0.4em);
+}
+
+.fun:hover,
+.unibox:hover:not(#hobbies, #feedback)
+{
+    box-shadow: 0 0.1em 0.25em var(--hover_shadow_color);
 }
 
 .transparent
