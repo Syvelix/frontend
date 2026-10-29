@@ -1103,7 +1103,7 @@ label#feedback_lbl h3:hover
 }
 
 .fun,
-.unibox:not(#hobbies)
+.unibox:not(#hobbies, #signup)
 {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -1115,7 +1115,7 @@ label#feedback_lbl h3:hover
 }
 
 .fun:hover,
-.unibox:hover:not(#hobbies)
+.unibox:hover:not(#hobbies, #signup)
 {
    transform: translateY(-0.4em);
 }
