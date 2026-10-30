@@ -30,6 +30,9 @@
     --hover_shadow_color:rgba(0, 0, 0, 0.329);
     --default_shadow_color:rgba(0, 0, 0, 0.445);
     --antishadow_color: rgba(255, 255, 255, 0.445);
+
+    --nav_mobile_hidden:-0.99;
+    --nav_pc_hidden: 0;
 }
 /* //// */
 
@@ -91,19 +94,18 @@ nav
     background-color: var(--nav_bg_color);
 
     font-size: 1.5rem;
+
+    transition: transform 0.5s ease;
+    transform: translateY(calc(var(--nav_pc_hidden) * 100%));
 }
 
-nav a
+nav *
 {
     letter-spacing: 1rem;
 }
 
-#nav_toggle
-{
-    display: none;
-}
 
-.nav_button
+#nav_button
 {
     display: block;
 
@@ -125,35 +127,16 @@ nav a
     font-size: large;
 }
 
-.nav_button *:hover
-{
-    color:var(--internal_hover_color);
-}
-
-.nav_button *
+label#nav_button
 {
     color:yellowgreen;
 }
 
-.closed
+label#nav_button:hover
 {
-    display: none;
+    color:var(--internal_hover_color);
 }
 
-#nav_toggle:checked ~ .nav_button .opened
-{
-    display: none;
-}
-
-#nav_toggle:checked ~ .nav_button .closed
-{
-    display: inline;
-}
-
-#nav_toggle:checked ~ nav
-{
-    display: none;
-}
 /* //// */
 
 body
@@ -432,6 +415,7 @@ hr
 
     border-style: solid;
     border-color: #001324;
+    z-index: 999;
 }
 
 .up /* Кнопка возврата наверх */
@@ -693,22 +677,11 @@ hr
     border-radius: 1rem;
 }
 
-.unibox#abilities
-{
-    padding: 1rem;
-    
-    background-color: #009eaf;
-    text-align: justify;
-
-    grid-row: auto;
-    grid-column: 1/-1;
-}
-
 .unibox#friends
 {
     padding: 0.5rem;
     
-    background-color: #5ff2ff;
+    background: radial-gradient(circle, #84bd00 ,#5ff2ff );
     text-align: justify;
 
     grid-column: 1/-1;
@@ -762,7 +735,7 @@ hr
 {
     padding: 0.5rem;
 
-    background-color: rgb(15, 0, 49);
+    background: linear-gradient(45deg, rgb(15, 0, 49) 10%, rgb(0, 3, 49));
     text-align: justify;
 
     grid-column: 2;
@@ -778,7 +751,7 @@ hr
 {
     padding: 0.5rem;
 
-    background-color: rgb(255, 236, 126);
+    background: linear-gradient(60deg, rgb(207, 180, 26), rgb(1, 190, 74)) ;
 
     margin: 1rem;
 
@@ -794,7 +767,7 @@ hr
 
     margin-top: -1rem;
 
-    background-color: rgb(80, 205, 255);
+    background: linear-gradient(45deg, rgb(79, 119, 134), rgb(80, 205, 255) 55%);
 
     justify-content: center;
     
@@ -806,7 +779,7 @@ hr
 {
     padding: 0.5rem;
 
-    background-color: rgb(1, 12, 0);
+    background: linear-gradient(45deg, rgb(1, 12, 0), rgb(0, 1, 12));
     border-color: #15ff00;
 
     justify-content: center;
@@ -818,7 +791,7 @@ hr
 .unibox#signup
 {
     grid-column: 1/-1;
-    background-color: #d7e4f8;
+    background: linear-gradient(to bottom, #d7e4f8, #227aff);
 }
 
 .unibox#signup input
@@ -1115,13 +1088,13 @@ label#feedback_lbl h3:hover
 }
 
 .fun:hover,
-.unibox:hover:not(#hobbies, #signup)
+.unibox:hover:not(#hobbies, #signup, #group)
 {
    transform: translateY(-0.4em);
 }
 
 .fun:hover,
-.unibox:hover:not(#hobbies, #feedback)
+.unibox:hover:not(#hobbies, #feedback, #group)
 {
     box-shadow: 0 0.1em 0.25em var(--hover_shadow_color);
 }
@@ -1222,10 +1195,11 @@ label#feedback_lbl h3:hover
 
         width: 220px;
 
-        position: sticky;
+        position: fixed;
 
         margin-left: -0.5%;
         margin-right: -0.5%;
+        margin-top: 0.4rem;
         top: 3rem;
         padding: 0.5em;
 
@@ -1237,14 +1211,17 @@ label#feedback_lbl h3:hover
 
         font-size: 1rem;
         overflow-wrap: anywhere;
+
+        transform: translateX(calc(var(--nav_mobile_hidden) * 100%));
     }
     nav a
     {
         letter-spacing: 0.5rem;
     }
 
-    .nav_button
+    #nav_button
     {
+        position: fixed;
         left: 4%;
     }
 
@@ -1287,7 +1264,7 @@ label#feedback_lbl h3:hover
 
     nav
     {
-        width: 120px;
+        width: 130px;
     }
 
     nav a
@@ -1295,7 +1272,7 @@ label#feedback_lbl h3:hover
         letter-spacing: normal;
     }
 
-    .nav_button
+    #nav_button
     {
         left:33%;
     }
