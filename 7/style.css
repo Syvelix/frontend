@@ -358,6 +358,8 @@ hr
 
     grid-row: auto;
     grid-column: 1/-1;
+
+    animation: opacity_anim_main 1s ease 0.5s 1 normal forwards;
 }
 
 /* Классы стилизации текста */
@@ -477,6 +479,21 @@ hr
     border-color: #002933;
     border-radius: 1.1rem;
     margin: 0.5rem;
+    opacity: 0;
+
+    animation: opacity_anim_main 1s ease 0.5s 1 normal forwards;
+}
+
+@keyframes opacity_anim_main
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
 }
 
 .unibox#info
@@ -1137,6 +1154,29 @@ label#feedback_lbl h3:hover
 /* Настройки для экранов с шириной <= 1024px */
 @media screen and (max-width: 1024px)
 {
+    @keyframes slide_anim_main 
+    {
+     0%
+     {
+        transform: translateX(-50rem);
+     }
+     25%
+     {
+        opacity: 0.25;
+     }
+     50%
+     {
+        opacity: 0.5;
+     }
+     75%
+     {
+        opacity: 0.75;
+     }
+     100%
+     {
+        opacity: 1;
+     }
+    }
     .unibox 
     {
         font-size: medium;
@@ -1146,6 +1186,8 @@ label#feedback_lbl h3:hover
         grid-column: 1;
         grid-row: auto;
 
+        opacity: 0;
+        animation: slide_anim_main 1s ease 0.2s 1 normal forwards;
     }
 
     .unibox ol,
@@ -1175,6 +1217,8 @@ label#feedback_lbl h3:hover
     {
         grid-column: 1/-1;
         grid-row: auto;
+
+        animation: slide_anim_main 1s ease 0.2s 1 normal forwards;
     }
 
     .unitable
