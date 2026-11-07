@@ -3,7 +3,7 @@ const navBtn = document.getElementById("nav_button");
 const navStatusOpen = 'Меню';
 const navStatusClose = 'Закрыть';
 navMobileState = -0.99;
-navPCState = 0;
+navPCState = -6;
 
 
 function switchNav()
