@@ -664,6 +664,36 @@ blockquote cite
     
 }
 
+.unibox.ai_perks
+{
+    display: grid;
+    grid-template-rows: 10em auto 1fr;
+
+    padding: 0.5rem;
+
+    border-color: #000c00;
+
+    justify-content: center;
+    
+    grid-column: auto;
+    grid-row: auto;
+
+    background: radial-gradient(circle at 20% 80%, rgb(0, 224, 253), rgb(0, 253, 34));
+}
+
+.unibox.ai_perks h2 
+{
+    margin: 0;
+    align-self: center;
+}
+
+.unibox.unibox.ai_perks hr
+{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
 .unibox#hobbies #games *
 {
     color:#92f2ff;
