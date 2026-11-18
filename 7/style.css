@@ -23,7 +23,7 @@
     --section_bg_color1:rgb(129, 255, 171);
     --section_bg_color2:rgb(175, 255, 129);
 
-    --nav_bg_color_m:rgba(126, 252, 214, 0.479);
+    --nav_bg_color_m:rgba(125, 255, 238, 0.658);
 
     --internal_hover_color:#ce00c4;
 
@@ -81,7 +81,7 @@ nav
 
     position: sticky;
     top: 3rem;
-    z-index: 999;
+    z-index: 10;
     
 
     padding: 0.5em;
@@ -121,7 +121,7 @@ nav *
     margin-bottom: 0.5rem;
     top: 0.5rem;
     position: sticky;
-    z-index: 999;
+    z-index: 10;
 
     font-size: large;
 }
@@ -342,6 +342,7 @@ hr
 
 .fun /* Интересный факт */
 {
+    z-index: 12;
     text-align:center;
     color:var(--fun_color);
     font-size:20px;
@@ -359,6 +360,78 @@ hr
     grid-column: 1/-1;
 
     animation: opacity_anim_main 1s ease 0.5s 1 normal backwards;
+}
+
+body:has(.fun img:hover) .fun > strong,
+body:has(.fun img:hover) .fun > br
+{
+    animation: zero_opacity 1s ease 0.5s 1 normal forwards;
+}
+
+body:has(.fun img:hover) .fun
+{
+    animation: zero_bg 1s ease 0.5s 1 normal forwards;
+}
+
+#madnessbox
+{
+    z-index: 11;
+    inset: 0;
+    display: block;
+    opacity: 0;
+    position: fixed;
+
+    box-sizing: border-box;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #140000;
+
+    pointer-events: none;
+}
+
+.fun img:hover
+{
+    position: relative;
+    z-index: 12;
+    animation: popup 1s ease-in 1.5s 1 normal forwards;
+}
+
+body:has(.fun img:hover) #madnessbox
+{
+    animation: opacity_anim_main 1.2s ease-in 1.5s 1 normal forwards;
+}
+
+@keyframes popup
+{
+    to
+    {
+        transform: scale(1.4);
+        transform :translateY(5rem);
+    }
+}
+
+@keyframes zero_opacity
+{
+    to
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes zero_bg
+{
+    to
+    {
+        background: linear-gradient(red, rgb(139, 0, 0));
+        box-shadow: none;
+        border-style: none;
+        padding: 4.8rem;
+        border-radius: 0.1rem;
+    }
 }
 
 /* Классы стилизации текста */
@@ -421,7 +494,7 @@ hr
 
     border-style: solid;
     border-color: #001324;
-    z-index: 999;
+    z-index: 10;
 }
 
 .up /* Кнопка возврата наверх */
@@ -429,7 +502,7 @@ hr
     position: fixed;
     bottom: 0.5rem;
     left: 0.7rem;
-    z-index: 999;
+    z-index: 10;
 
     border-style: solid;
     border-color: rgb(206, 0, 0);
@@ -1139,7 +1212,7 @@ label#feedback_lbl h3:hover
 
 div.frame
 {
-    z-index: 998;
+    z-index: 999;
     display: block;
     position: fixed;
 
