@@ -5,6 +5,15 @@ const navStatusClose = 'Закрыть';
 navMobileState = -0.99;
 navPCState = -6;
 
+function changeDefaultOpacity()
+{
+    document.documentElement.style.setProperty('--default_opacity', 1);
+}
+
+function changeDefaultSlide()
+{
+    document.documentElement.style.setProperty('--default_slide', 0);
+}
 
 function switchNav()
 {
@@ -41,3 +50,6 @@ function switchNavState()
 
 navBtn.addEventListener('click', switchNavState);
 navBtn.addEventListener('click', switchNav);
+
+setTimeout(() => changeDefaultOpacity(), 1300);
+setTimeout(() => changeDefaultSlide(), 1300);
