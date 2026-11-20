@@ -15,6 +15,7 @@
     --fun_color:rgb(126, 0, 48);
 
     --default_opacity:0;
+    --max_opacity:1;
     --default_slide:-50rem;
 
     --header_bg_color:rgb(243, 239, 227);
@@ -191,6 +192,8 @@ section.intro /* Раздел с кратким сообщением по тем
     grid-row: 1;
     grid-column: 1/-1;
 
+    opacity: var(--default_opacity);
+
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-inline-end: 1rem;
@@ -199,6 +202,8 @@ section.intro /* Раздел с кратким сообщением по тем
     font-size: large;
 
     padding: 1em;
+
+    animation: opacity_anim_main 1.5s ease 0.5s 1 normal forwards;
 }
 
 .adaptive_blocks /* Адаптивная сетка */
@@ -363,6 +368,7 @@ hr
     text-align:center;
     color:var(--fun_color);
     font-size:20px;
+    opacity: var(--default_opacity);
 
     border-style: solid;
     border-color: rgb(151, 39, 255);
@@ -376,7 +382,7 @@ hr
     grid-row: auto;
     grid-column: 1/-1;
 
-    animation: opacity_anim_main 1s ease 0.5s 1 normal backwards;
+    animation: opacity_anim_main 1.5s ease 0.5s 1 normal forwards;
     transition: --fun_grad_color1 12s ease, --fun_grad_color2 12s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
@@ -589,6 +595,7 @@ body:has(.fun img:hover) #madnessbox
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: repeat(auto-fill, 1fr);
+    opacity: var(--default_opacity);
 
     background-color: magenta;
     font-size: larger;
@@ -598,7 +605,7 @@ body:has(.fun img:hover) #madnessbox
     border-radius: 1.1rem;
     margin: 0.5rem;
 
-    animation: opacity_anim_main 1s ease 0.5s 1 normal backwards;
+    animation: opacity_anim_main 1.5s ease 0.5s 1 normal forwards;
 }
 
 @keyframes opacity_anim_main
@@ -609,7 +616,19 @@ body:has(.fun img:hover) #madnessbox
     }
     to
     {
-        opacity: 1;
+        opacity: var(--max_opacity);
+    }
+}
+
+@keyframes opacity_anim_reverse
+{
+    from
+    {
+        opacity: var(--max_opacity);
+    }
+    to
+    {
+        opacity: var(--default_opacity);
     }
 }
 
@@ -1045,6 +1064,8 @@ body:has(.fun img:hover) #madnessbox
     display: table;
     table-layout: fixed;
 
+    opacity: var(--default_opacity);
+
     margin-inline: auto;
     grid-row: auto;
     grid-column:  1/-1;
@@ -1054,6 +1075,8 @@ body:has(.fun img:hover) #madnessbox
     border-radius: 0.4rem;
     background-color: #050000;
     width: 95%;
+
+    animation: opacity_anim_main 1.5s ease 0.5s 1 normal forwards;
 }
 
 .unitable *
