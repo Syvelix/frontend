@@ -605,7 +605,7 @@ body:has(.fun img:hover) #madnessbox
     border-radius: 1.1rem;
     margin: 0.5rem;
 
-    animation: opacity_anim_main 1.5s ease 0.5s 1 normal forwards;
+    animation: opacity_anim_main 1.5s linear 0.5s 1 normal forwards;
 }
 
 @keyframes opacity_anim_main
@@ -1076,7 +1076,7 @@ body:has(.fun img:hover) #madnessbox
     background-color: #050000;
     width: 95%;
 
-    animation: opacity_anim_main 1.5s ease 0.5s 1 normal forwards;
+    animation: opacity_anim_main 1.5s linear 0.5s 1 normal forwards;
 }
 
 .unitable *
